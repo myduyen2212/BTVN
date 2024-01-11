@@ -267,12 +267,14 @@ input[type="submit"]:hover {
 
 #cmt {
   position: relative;
-  left: 233px;
+  left: 308px;
+  top: -35px;
 }
 
 input[type="submit"] {
   position: relative;
   left: 307px;
+  top: -45px;
 }
 
 .age input[type="radio"] {
