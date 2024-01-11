@@ -1,5 +1,6 @@
-.font {
+* {
   font-family: sans-serif, "Segoe UI", Tahoma, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 .heading {
@@ -22,21 +23,20 @@ h2 {
   color: rgb(223, 23, 23);
   text-align: right;
   font-size: 20px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* Hình nền */
 body {
   background-image: url(./img/UEHCSA.png);
   background-size: 100%;
-  background-repeat: repeat-y;
+  background-attachment: fixed;
 }
 
 .DSCNDT {
   width: 500px;
   height: 190px;
   background-color: rgb(178, 236, 208);
-  box-sizing: border-box;
   margin-left: 50px;
   border-radius: 10px;
 }
@@ -50,18 +50,18 @@ body {
   width: 500px;
   height: fit-content;
   background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
   margin: 20px;
   margin-left: 50px;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cau4 .grid-items .item {
   width: 350px;
   background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
-  margin: 20px;
-  margin-left: 60px;
+  margin: 10px;
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2),
     2px 6px 20px 2px rgba(0, 0, 0, 0.19);
 }
@@ -79,20 +79,17 @@ body {
   width: 1350px;
   height: fit-content;
   background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
   margin: 20px;
   margin-left: 50px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .cau5 .grid-items .item {
   width: 350px;
   background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
-  margin: 20px;
-  margin-left: 60px;
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2),
     2px 6px 20px 2px rgba(0, 0, 0, 0.19);
 }
@@ -109,6 +106,7 @@ body {
 
 .cau5 .grid-items .item:hover {
   cursor: pointer;
+  border: 3px solid rgb(110, 169, 21);
 }
 
 .cau5 .grid-items .item .item-content .item-title a {
@@ -128,6 +126,7 @@ body {
   height: 5ex;
   background-color: aquamarine;
   border: 2px solid rgb(37, 115, 136);
+  border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   margin-right: 5px;
@@ -167,21 +166,115 @@ body {
 .dropdown-index:hover .dropdown-content {
   display: block;
   position: fixed;
-  bottom: 60px;
+  bottom: 55px;
   right: 20px;
 }
 
 .dropdown-index:hover .btnDropdownIndex {
-  background-color: rgb(203, 240, 240);
-  color: rgb(130, 130, 130);
+  background-color: rgb(84, 187, 153);
 }
 
 .cau7 {
   width: 350px;
-  height: 145px;
+  height: 140px;
   background-color: rgb(178, 236, 208);
-  box-sizing: border-box;
   margin-left: 50px;
   border-radius: 10px;
   padding: 20px;
+}
+
+.cau8 {
+  width: 600px;
+  height: 470px;
+  background-color: white;
+  margin-left: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  line-height: 32pt;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2),
+    2px 6px 20px 2px rgba(0, 0, 0, 0.19);
+}
+
+.cau8 h3 {
+  text-align: center;
+  color: rgb(44, 44, 159);
+  margin: 0px;
+  font-size: 25px;
+}
+
+.cau8 hr {
+  border-color: rgb(91, 182, 209);
+  margin: 15px auto;
+}
+
+textarea {
+  resize: none;
+  overflow: scroll;
+  width: 250px;
+  height: 100px;
+  padding: 4px;
+}
+
+select {
+  width: 250px;
+  padding: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  padding: 4px;
+}
+
+input[type="radio"] {
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 4ex;
+  background-color: rgb(115, 200, 228);
+  border: 2px solid rgb(37, 115, 136);
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(185, 220, 233);
+}
+
+.cau9 hr {
+  margin: 20px;
+}
+
+#name {
+  position: relative;
+  left: 209px;
+}
+
+#email {
+  position: relative;
+  left: 258px;
+}
+
+#place {
+  position: relative;
+  left: 30px;
+}
+
+#cmt {
+  position: relative;
+  left: 233px;
+}
+
+input[type="submit"] {
+  position: relative;
+  left: 307px;
+}
+
+.age input[type="radio"] {
+  width: 40px;
 }
